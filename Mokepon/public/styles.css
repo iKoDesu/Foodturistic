@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(to left,rgb(17, 220, 196),rgb(0, 110, 255));;
+}  
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between 10px;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+.titulo {
+    color: white;
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    font-family: "Poppins", cursive;
+    text-align: center;
+}
+
+
+.subtitulo{
+    color: white;
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo-ataque{
+    color: white;
+    width: 270px;
+    height: 30px;
+    background-color: tomato;
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-mascota{
+    width: 100px;
+    height: 30px;
+    background: #FFACE4;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #AB87FF;
+    border-radius: 20px;
+    align-items: center;
+    color: tomato;
+    font-family: 'Poppins', cursive;
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    
+    width: 120px;
+    height: 160px;
+    background: #83B4FF;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: #FDFFE2;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column-reverse;
+}
+
+.tarjeta-de-mokepon p{
+    width:  100px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+    border-radius: 100px;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left,rgb(17, 220, 196),rgb(0, 110, 255));
+    box-sizing: border-box;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    text-align: center;
+}
+
+#mensajes{
+    width: 250px;
+    background-color: aqua;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boton-de-ataques{
+    background: green;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 70px;
+}
+
+#boton-reiniciar{
+    border: none;
+    background-color: aqua;
+    color: red;
+    font-family: 'Fredoka One', cursive;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #5A72A0;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: tomato;
+    margin: 10px;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 80px;
+    height: 30px;
+    background: #FFACE4;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #AB87FF;
+    border-radius: 20px;
+    align-items: center;
+    color: tomato;
+    font-family: 'Poppins', cursive;
+    margin: 10px 0px;
+}
+
+#mapa{
+    border: 2px solid white;
+}
+
+#botones-vertical{
+    display: flex;
+}
+
+@media (max-width: 560px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
